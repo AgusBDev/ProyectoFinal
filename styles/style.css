@@ -78,17 +78,15 @@ transition: all ease-in-out 250ms;
 
 /*fin menu*/
 /*seccion inicio*/
-#seccion-inicio{
-    /* min-height: 90vh; */
-    /* overflow: hidden; */
-}
-
 .container-inicio{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, 1fr);
+    display: flex;
+    /* grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr); */
     background-image: url(../img/img-slider-3.jpg);
     background-size: cover;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
     /* background-repeat: space; */
 }
 
@@ -245,18 +243,20 @@ footer{
     background-color: black;
     color: white;
     display: grid;
-    grid-template-columns: fit-content(20%) 80%;
+    grid-template-columns: 35% 65%;
+    grid-template-rows: 90% 10%;
+    /* grid-template-columns: fit-content(20%) 80%;
     grid-template-rows: 75% 25%;
     grid-template-areas: 
     ".mapa .contacto .redes"
     ".derechos";
-    overflow: hidden;
+    overflow: hidden; */
 }
 
-.redes, .contacto{
+.contacto, .redes{
+    grid-column-start: 2;
     grid-row-start: 1;
-    grid-column-start:2;
-    padding-left: 1rem;
+    padding-left: 1em;
 }
 
 .redes{
@@ -264,15 +264,19 @@ footer{
 }
 
 .derechos{
-    grid-area: 2 / 2 / 2 / 2 ; 
+    grid-column-start: 1;
+    grid-column-end: 3;
+    align-self: center;
+    justify-self: center;
 }
 
 .mapa{
-    width: fit-content;
+    width: 100%;
 }
 
 .mapa iframe{
-    width: max-content;
+    width: 20rem;
+    height: 10rem;
 }
 /*Fin Footer*/
 
@@ -324,5 +328,85 @@ footer{
     #check:checked ~ nav{
         display: flex;
     }
+
+    .container-inicio{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        background-image: url(../img/img-slider-3.jpg);
+        background-size: cover;
+        /* background-repeat: space; */
+    }
+
+    footer{
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 90% 10%;
+    }
+    .mapa{
+        width: auto;
+    }
+}
+
+@media (max-width: 600px){
+    
+    h1, h2{
+        font-size: 3rem;  
+    }
+    h3{       
+        font-size: 2rem;      
+    }
+
+   .container-nos{
+       grid-template-columns: 100%;
+       grid-template-rows: repeat(25%, 4);
+   }
+
+   .desc-nosotros > p{
+       padding: 0;
+       margin: 0;
+   }
+
+   .elemento{
+        padding: 0;
+    }
+
+   .form-contacto{
+        grid-template-columns: 100%;
+        grid-template-rows: 35% 65%;
+   }
+
+   .form-contacto form{
+        padding: 10px 100px;
+        gap: 1rem;
+    }
+
+    
+
+    footer{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 40% 40% 20%;
+    }
+
+    .contacto{
+        grid-row-start: 1;
+        grid-column-start:1;
+        padding-left: 1rem;
+    }
+    
+    .redes{
+        padding-top: 1rem;
+        grid-row-start: 2;
+        grid-column-start:1;
+        padding-left: 1rem;
+    }
+
+    .derechos{
+        grid-area: 3 / 1 / 3 / 1 ; 
+    }
+
+    .mapa{
+        display: none;
+    }
+
 }
 
