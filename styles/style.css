@@ -43,16 +43,16 @@ header{
   }
 
 .menu a::before {
-content: '';
-display: block;
-height: 5px;
-background-color: rgba(255, 255, 255, 1);
+    content: '';
+    display: block;
+    height: 5px;
+    background-color: rgba(255, 255, 255, 1);
 
-position: absolute;
-top: 0;
-width: 0%;
+    position: absolute;
+    top: 0;
+    width: 0%;
 
-transition: all ease-in-out 250ms;
+    transition: all ease-in-out 250ms;
 }
 
 .menu a:hover::before {
