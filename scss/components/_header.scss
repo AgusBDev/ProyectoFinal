@@ -1,0 +1,63 @@
+header{
+    nav{
+        display: flex;
+        flex-direction: row;
+        margin-right: auto;
+        margin-left: auto;
+        background-color: rgba(5, 5,5, 1);        
+        .logo{
+            margin:1rem;
+        }
+        ul{
+            list-style: none;
+            display: flex;
+            align-items: center;
+            // gap: 1em;
+            margin-right: 1rem;
+            margin-left: auto;
+            li{
+                padding: 15px;
+                border-radius: 20px;
+                &:hover{
+                    background-color: rgba(200, 200, 200, 0.5);
+                    transition: background-color 0.5s ease-out;
+                }
+                a{
+                    text-decoration: none;
+                    color: white;
+                }
+            }
+            @media screen and (max-width: 768px){
+                display: none;
+                margin:0;
+            }
+        }
+        
+
+        .checkbtn{
+            display: none;
+            @media screen and (max-width: 768px){
+                font-size: 2rem;
+                color: white;
+                float: right;
+                margin-top: 20px;
+                margin-right: 2rem;
+                display: block;
+            }
+        }
+    
+        #check{
+            display: none;
+            @media screen and (max-width: 768px){
+                flex-direction: row;
+                &:checked ~ ul{
+                    display: block;
+                }
+            }
+        }
+        
+        @media screen and (max-width: 768px){
+            display: block;
+        }
+    }
+}

@@ -1,0 +1,18 @@
+#seccion-inicio{
+    .container-inicio{
+        display: flex;
+        background-image: url(../img/img-slider-3.jpg);
+        background-size: cover;
+        justify-content: center;
+        align-items: center;
+        height: 90vh;
+        .titulos{
+            h1, h2{
+                font-size: 3.5rem;
+                text-align: center;
+                color: white;
+                margin: 0;
+            } 
+        }
+    }    
+}
