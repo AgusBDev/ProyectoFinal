@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/AgusBDev/ProyectoFinal/issues"
   },
-  "homepage": "https://github.com/AgusBDev/ProyectoFinal#readme"
+  "homepage": "https://github.com/AgusBDev/ProyectoFinal#readme",
+  "dependencies": {
+    "bootstrap": "^5.1.3"
+  }
 }

@@ -1,0 +1,39 @@
+footer{
+    background-color: black;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    padding: 1rem;
+    .mapa{
+        grid-column-start: 1;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        height: 30vh;
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        iframe{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .contacto{
+        grid-column-start: 2;
+        grid-row-start: 1;
+    }
+    .redes{
+        grid-column-start: 2;
+        grid-row-start: 2;
+    }
+    .derechos{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        align-self: center;
+        justify-self: center;
+    }
+}

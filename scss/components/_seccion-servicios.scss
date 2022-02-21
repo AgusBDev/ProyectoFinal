@@ -1,15 +1,16 @@
 #seccion-servicios{
+    background-color: rgba(128, 128, 128, 0.116);
+    padding-bottom: 2em;
     h3{
-        margin-right: 0;
-        margin-left: 0;
-        margin-bottom: 2em;
+        margin: 0 0 2em 0;
+        padding-top: 1.5em;
         text-align: center;
         font-size: 2rem;
     }
     .container-servicios{
         display: grid;
-        grid-template-columns: repeat(4, 20%);
-        justify-content: center;
+        grid-template-columns: repeat(4, 1fr);
+        // justify-content: center;
         gap: 1rem;
         .servicio{
             display: flex;
@@ -19,15 +20,25 @@
             margin: 0.5rem 1.5rem;
             img{
                 width: 80%;
-                aspect-ratio: 2 / 1;
+                
                 object-fit: cover;
             }
             .desc-servicio{
+                text-align: center;
                 h4{
                     font-size: 1.5rem;
                 }
-                text-align: center;
+                p{
+                    text-align: justify;
+                }
+                
             }
+        }
+        @media screen and (max-width: 1024px){
+            grid-template-columns: repeat(2, 40%);
+        }
+        @media screen and (max-width: 576px){
+            grid-template-columns: 1fr;
         }
     }
 }

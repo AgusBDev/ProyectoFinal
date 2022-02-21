@@ -1,0 +1,54 @@
+#seccion-trabajos{
+    h3{
+        text-align: center;
+        font-size: 2rem;
+    }
+    .contenedor-scroller{
+        display: grid;
+        gap: 1rem;
+        grid-auto-flow:column;
+        grid-auto-columns: 21%;
+        padding: 0 1rem 1rem;
+        overflow-x: auto;
+        overscroll-behavior-inline: contain;
+        .elemento{
+            display: grid;
+            /* grid-template-columns: min-content; */
+            gap: 1rem;
+            padding: 1rem;
+            background: rgba(224, 224, 224, 1);
+            border-radius: 5px;
+            box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.5);
+            @media screen and (max-width: 768px){
+                padding: 0;
+                
+            }
+        }
+        
+        .elemento > img {
+            inline-size: 100%;
+            aspect-ratio: 16 / 9;
+            object-fit: cover;
+        }
+        @media screen and (max-width: 768px){
+            grid-auto-columns: 33%;
+            
+        }
+        @media screen and (max-width: 425px){
+            grid-auto-columns: 50%;
+            
+        }
+        
+    }
+    .snap {
+        scroll-snap-type: inline mandatory;
+        scroll-padding-inline: var(--_spacer, 1rem);
+    }
+      
+    .snap > * {
+        scroll-snap-align: start;
+    }
+}
+
+
+
