@@ -4,7 +4,7 @@ header{
         flex-direction: row;
         margin-right: auto;
         margin-left: auto;
-        background-color: rgba(5, 5,5, 1);        
+        background-color: rgb(182, 177, 177);        
         .logo{
             margin:1rem;
         }
@@ -16,15 +16,15 @@ header{
             margin-right: 1rem;
             margin-left: auto;
             li{
-                padding: 15px;
+                padding: 10px;
                 border-radius: 20px;
                 &:hover{
-                    background-color: rgba(200, 200, 200, 0.5);
+                    background-color: lighten(rgba(200, 200, 200, 0.5), 70%);
                     transition: background-color 0.5s ease-out;
                 }
                 a{
                     text-decoration: none;
-                    color: white;
+                    color: black;
                 }
             }
             @media screen and (max-width: 768px){

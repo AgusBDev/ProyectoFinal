@@ -5,6 +5,9 @@
             text-align: center;
             font-size: 2rem;
         }
+       
+
+    
         form{
             display: flex;
             flex-direction: column;
@@ -12,19 +15,42 @@
             margin: auto;
             justify-content: center;
             gap: 1rem;
-            input, textarea{
+            input{
                 height: 30px;
-                border-radius: 10px;
-                border: 0.5px solid gray;
+                border: 0;
+                border-bottom: 0.5px solid gray; 
+                transition: all 0.7s;
+                &:focus{
+                    outline: 0;
+                    transform: scale(1.1);
+                }               
             }
             textarea{
                 height: 100px;
+                border: 0;
+                border-bottom: 0.5px solid gray;
+                transition: all 0.7s;
+                &:focus{
+                    outline: 0;
+                    transform: scale(1.1);
+                }
             }
             button{
-                height: 30px;
-                border-radius: 10px;
-                border: 0.5px solid gray;
-                background-color: lightblue;
+                height: 35px;
+                background-color: #f4511e;
+                color: white;
+                transition: all 0.7s;
+                width: 25%;
+                border: 0;
+                cursor: pointer;
+                &:hover{
+                    transform: scale(1.2);
+                }
+                @media screen and (max-width: 500px){
+                    width: 50%;
+                    align-self: center;
+                    justify-self: center;
+                }
             }
         }
     }

@@ -9,7 +9,7 @@ header nav {
   flex-direction: row;
   margin-right: auto;
   margin-left: auto;
-  background-color: #050505;
+  background-color: #b6b1b1;
 }
 header nav .logo {
   margin: 1rem;
@@ -22,16 +22,16 @@ header nav ul {
   margin-left: auto;
 }
 header nav ul li {
-  padding: 15px;
+  padding: 10px;
   border-radius: 20px;
 }
 header nav ul li:hover {
-  background-color: rgba(200, 200, 200, 0.5);
+  background-color: rgba(255, 255, 255, 0.5);
   transition: background-color 0.5s ease-out;
 }
 header nav ul li a {
   text-decoration: none;
-  color: white;
+  color: black;
 }
 @media screen and (max-width: 768px) {
   header nav ul {
@@ -122,11 +122,13 @@ header nav #check {
 @media screen and (max-width: 1024px) {
   #seccion-servicios .container-servicios {
     grid-template-columns: repeat(2, 40%);
+    justify-content: center;
   }
 }
 @media screen and (max-width: 576px) {
   #seccion-servicios .container-servicios {
     grid-template-columns: 1fr;
+    justify-content: center;
   }
 }
 
@@ -230,19 +232,44 @@ header nav #check {
   justify-content: center;
   gap: 1rem;
 }
-#seccion-contacto .form-contacto form input, #seccion-contacto .form-contacto form textarea {
+#seccion-contacto .form-contacto form input {
   height: 30px;
-  border-radius: 10px;
-  border: 0.5px solid gray;
+  border: 0;
+  border-bottom: 0.5px solid gray;
+  transition: all 0.7s;
+}
+#seccion-contacto .form-contacto form input:focus {
+  outline: 0;
+  transform: scale(1.1);
 }
 #seccion-contacto .form-contacto form textarea {
   height: 100px;
+  border: 0;
+  border-bottom: 0.5px solid gray;
+  transition: all 0.7s;
+}
+#seccion-contacto .form-contacto form textarea:focus {
+  outline: 0;
+  transform: scale(1.1);
 }
 #seccion-contacto .form-contacto form button {
-  height: 30px;
-  border-radius: 10px;
-  border: 0.5px solid gray;
-  background-color: lightblue;
+  height: 35px;
+  background-color: #f4511e;
+  color: white;
+  transition: all 0.7s;
+  width: 25%;
+  border: 0;
+  cursor: pointer;
+}
+#seccion-contacto .form-contacto form button:hover {
+  transform: scale(1.2);
+}
+@media screen and (max-width: 500px) {
+  #seccion-contacto .form-contacto form button {
+    width: 50%;
+    align-self: center;
+    justify-self: center;
+  }
 }
 
 footer {

@@ -36,9 +36,11 @@
         }
         @media screen and (max-width: 1024px){
             grid-template-columns: repeat(2, 40%);
+            justify-content: center;
         }
         @media screen and (max-width: 576px){
             grid-template-columns: 1fr;
+            justify-content: center;
         }
     }
 }
