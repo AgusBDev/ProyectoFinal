@@ -1,13 +1,11 @@
-@import '../base/colors'
-
+@import '../base/colors';
 header{
-
     nav{
         display: flex;
         flex-direction: row;
         margin-right: auto;
         margin-left: auto;
-        background-color: rgb(182, 177, 177);        
+        background-color: map-get($color-palette , fc );
         .logo{
             margin:1rem;
         }
@@ -22,7 +20,7 @@ header{
                 padding: 10px;
                 border-radius: 20px;
                 &:hover{
-                    background-color: lighten(rgba(200, 200, 200, 0.5), 70%);
+                    background-color: map-get($color-palette , tc);
                     transition: background-color 0.5s ease-out;
                 }
                 a{

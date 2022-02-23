@@ -3,21 +3,26 @@
     grid-template-rows: 1fr 1fr;
     align-content: center;
     margin: 2em;
-    background-color: rgba(128, 128, 128, 0.103);
+    background-color: map-get($color-palette , sc );
+    border-radius: 10px;
     .container-nos{
         display: grid;
         grid-template-columns: 50% 50%;
-        
         .desc-nosotros{
+            display: flex;
+            flex-direction: column;
+
+            justify-content: center;
             padding: 2em;
+            font-size: 1.1rem;
             h3{
-                font-size: 2rem;
+                font-size: 3rem;
             }
         }
         .img-nosotros{
             img{
                 width: 100%;
-                height: auto;
+                height: 100%;
             }
         }
         @media screen and (max-width: 1024px){

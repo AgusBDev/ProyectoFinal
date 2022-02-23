@@ -1,5 +1,5 @@
 footer{
-    background-color: black;
+    background-color: map-get($color-palette , ftc );
     color: white;
     display: grid;
     grid-template-columns: repeat(2, 1fr);

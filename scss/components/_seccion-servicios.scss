@@ -1,5 +1,5 @@
 #seccion-servicios{
-    background-color: rgba(128, 128, 128, 0.116);
+    background-color: map-get($color-palette , fc );
     padding-bottom: 2em;
     h3{
         margin: 0 0 2em 0;

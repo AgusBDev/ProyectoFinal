@@ -9,7 +9,7 @@ header nav {
   flex-direction: row;
   margin-right: auto;
   margin-left: auto;
-  background-color: #b6b1b1;
+  background-color: #F3F1F5;
 }
 header nav .logo {
   margin: 1rem;
@@ -26,7 +26,7 @@ header nav ul li {
   border-radius: 20px;
 }
 header nav ul li:hover {
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: #987ab4;
   transition: background-color 0.5s ease-out;
 }
 header nav ul li a {
@@ -69,9 +69,12 @@ header nav #check {
   }
 }
 
+#seccion-inicio {
+  background-image: url(../../img/balloons-388973_960_720.jpg);
+  background-size: cover;
+}
 #seccion-inicio .container-inicio {
   display: flex;
-  background-image: url(../img/img-slider-3.jpg);
   background-size: cover;
   justify-content: center;
   align-items: center;
@@ -82,10 +85,21 @@ header nav #check {
   text-align: center;
   color: white;
   margin: 0;
+  text-shadow: 2px 0 0 #987ab4, -2px 0 0 #987ab4, 0 2px 0 #987ab4, 0 -2px 0 #987ab4, 1px 1px #987ab4, -1px -1px 0 #987ab4, 1px -1px 0 #987ab4, -1px 1px 0 #987ab4;
+}
+@media screen and (max-width: 1024px) {
+  #seccion-inicio .container-inicio .titulos h1, #seccion-inicio .container-inicio .titulos h2 {
+    font-size: 2.6rem;
+  }
+}
+@media screen and (max-width: 1024px) {
+  #seccion-inicio .container-inicio {
+    background-image: url(../../img/img-inicio.jpg);
+  }
 }
 
 #seccion-servicios {
-  background-color: rgba(128, 128, 128, 0.116);
+  background-color: #F3F1F5;
   padding-bottom: 2em;
 }
 #seccion-servicios h3 {
@@ -137,21 +151,26 @@ header nav #check {
   grid-template-rows: 1fr 1fr;
   align-content: center;
   margin: 2em;
-  background-color: rgba(128, 128, 128, 0.103);
+  background-color: #F0D9FF;
+  border-radius: 10px;
 }
 #seccion-nosotros .container-nos {
   display: grid;
   grid-template-columns: 50% 50%;
 }
 #seccion-nosotros .container-nos .desc-nosotros {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   padding: 2em;
+  font-size: 1.1rem;
 }
 #seccion-nosotros .container-nos .desc-nosotros h3 {
-  font-size: 2rem;
+  font-size: 3rem;
 }
 #seccion-nosotros .container-nos .img-nosotros img {
   width: 100%;
-  height: auto;
+  height: 100%;
 }
 @media screen and (max-width: 1024px) {
   #seccion-nosotros .container-nos {
@@ -254,7 +273,7 @@ header nav #check {
 }
 #seccion-contacto .form-contacto form button {
   height: 35px;
-  background-color: #f4511e;
+  background-color: #987ab4;
   color: white;
   transition: all 0.7s;
   width: 25%;
@@ -273,7 +292,7 @@ header nav #check {
 }
 
 footer {
-  background-color: black;
+  background-color: #7F7C82;
   color: white;
   display: grid;
   grid-template-columns: repeat(2, 1fr);

@@ -37,7 +37,7 @@
             }
             button{
                 height: 35px;
-                background-color: #f4511e;
+                background-color: map-get($color-palette , tc);
                 color: white;
                 transition: all 0.7s;
                 width: 25%;

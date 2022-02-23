@@ -1,7 +1,9 @@
 #seccion-inicio{
+    background-image: url(../../img/balloons-388973_960_720.jpg);
+    background-size: cover;
     .container-inicio{
         display: flex;
-        background-image: url(../img/img-slider-3.jpg);
+        // background-image: url(../../img/balloons-388973_960_720.jpg);
         background-size: cover;
         justify-content: center;
         align-items: center;
@@ -12,7 +14,17 @@
                 text-align: center;
                 color: white;
                 margin: 0;
+                text-shadow: 2px 0 0 map-get($color-palette , tc ), -2px 0 0 map-get($color-palette , tc ), 0 2px 0 map-get($color-palette , tc ), 0 -2px 0 map-get($color-palette , tc ), 1px 1px map-get($color-palette , tc ), -1px -1px 0 map-get($color-palette , tc ), 1px -1px 0 map-get($color-palette , tc ), -1px 1px 0 map-get($color-palette , tc );
             } 
+            @media screen and (max-width: 1024px){
+                h1, h2{
+                    font-size: 2.6rem;
+                } 
+            }
+
+        }
+        @media screen and (max-width: 1024px){
+            background-image: url(../../img/img-inicio.jpg);
         }
     }    
 }
