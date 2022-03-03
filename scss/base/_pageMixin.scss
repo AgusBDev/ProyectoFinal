@@ -1,0 +1,9 @@
+@mixin d-flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.desc-nosotros{
+    @include d-flex;
+}

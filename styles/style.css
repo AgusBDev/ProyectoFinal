@@ -159,9 +159,6 @@ header nav #check {
   grid-template-columns: 50% 50%;
 }
 #seccion-nosotros .container-nos .desc-nosotros {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   padding: 2em;
   font-size: 1.1rem;
 }
@@ -329,6 +326,12 @@ footer .derechos {
   grid-row-start: 3;
   align-self: center;
   justify-self: center;
+}
+
+.desc-nosotros {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=style.css.map */
